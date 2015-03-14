@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Coming Soon!</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<style>
+			p {
+				text-align: center;
+				font-size: 22pt;
+				font-family: "Calibri", "Arial", sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="logo" src="/img/logo.png" alt="TF2Can" width=600 height=600>
+		<p>Coming Soon!</p>
+		<script>
+			$(document).ready(function() {
+				function centerText() {
+					var padding = 200;
+					$('#logo').attr('width', $(document).height() - padding);
+					$('#logo').attr('height', $(document).height() - padding);
+					$('#logo').css('margin-top', ($(document).height() - $('#logo').height()) / 2 * 0.9);
+					$('#logo').css('margin-left', ($(document).width() - $('#logo').width()) / 2);
+				};
+
+				centerText();
+
+				$(window).resize(function() {
+					centerText();
+				});
+			});
+		</script>
+	</body>
+</html>
+

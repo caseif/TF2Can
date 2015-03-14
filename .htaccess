@@ -1,0 +1,5 @@
+Allow from all
+RewriteEngine on
+RedirectMatch 404 /\\.git(/|$)
+RedirectMatch 404 /LICENSE(/|$)
+
