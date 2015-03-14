@@ -16,7 +16,7 @@
 		<p>Coming Soon!</p>
 		<script>
 			$(document).ready(function() {
-				function centerText() {
+				function centerLogo() {
 					var padding = 200;
 					$('#logo').attr('width', $(document).height() - padding);
 					$('#logo').attr('height', $(document).height() - padding);
@@ -24,10 +24,10 @@
 					$('#logo').css('margin-left', ($(document).width() - $('#logo').width()) / 2);
 				};
 
-				centerText();
+				centerLogo();
 
 				$(window).resize(function() {
-					centerText();
+					centerLogo();
 				});
 			});
 		</script>
